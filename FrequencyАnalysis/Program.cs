@@ -22,11 +22,11 @@ namespace FrequencyАnalysis
             var cancellTokenSourceForMainTask = new CancellationTokenSource();
             var tokenForMainTask = cancellTokenSourceForMainTask.Token;
 
-            //Console.WriteLine("Введите полное название файла");
-            //var filePath = Console.ReadLine();
-            //filePath = @"" + filePath;
+            Console.WriteLine("Введите полное название файла");
+            var filePath = Console.ReadLine();
+            filePath = @"" + filePath;
 
-            var filePath = @"C:/Users/Admin/source/repos/FrequencyАnalysis/FrequencyАnalysis/ExampleBigText.txt";
+            //var filePath = @"C:/Users/Admin/source/repos/FrequencyАnalysis/FrequencyАnalysis/ExampleBigText.txt";
 
             // Количество букв - триплеты
             const int countLetters = 3;
