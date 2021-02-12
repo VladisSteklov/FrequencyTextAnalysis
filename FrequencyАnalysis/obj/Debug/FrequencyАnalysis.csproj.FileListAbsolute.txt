@@ -1,0 +1,7 @@
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\bin\Debug\FrequencyАnalysis.exe.config
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\bin\Debug\FrequencyАnalysis.exe
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\bin\Debug\FrequencyАnalysis.pdb
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\obj\Debug\FrequencyАnalysis.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\obj\Debug\FrequencyАnalysis.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\obj\Debug\FrequencyАnalysis.exe
+C:\Users\Admin\source\repos\FrequencyАnalysis\FrequencyАnalysis\obj\Debug\FrequencyАnalysis.pdb
