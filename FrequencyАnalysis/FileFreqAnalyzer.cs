@@ -44,18 +44,21 @@ namespace FrequencyАnalysis
 
         public void SortSplittedTextFrequency()
         {
-            // Сортировка словаря по значению
-            var sortedItems = LetterFreqDictionary.OrderByDescending(item => item.Value);
-
-            var sortedDictionary = new Dictionary<string, int>(LetterFreqDictionary.Count);
-
-            foreach (var pair in sortedItems)
+            List<KeyValuePair<string, int>> items = LetterFreqDictionary.ToList();
+            items.Sort(new Comparison<KeyValuePair<string, int>>((first, second) =>
             {
-                // Бросить исключение, если произошла отмена
-                _canceltokenForThisWork.ThrowIfCancellationRequested();
-                sortedDictionary.Add(pair.Key, pair.Value);
-            }
-            LetterFreqDictionary = sortedDictionary;
+                if (second.Value > first.Value)
+                {
+                    return 1;
+                }
+                if (second.Value < first.Value)
+                {
+                    return -1;
+                }
+                return 0;
+            }));
+
+            LetterFreqDictionary = items.ToDictionary(x => x.Key, y => y.Value);
         }
 
         private void SubStringAndAddDictionary(string stringFromText)
